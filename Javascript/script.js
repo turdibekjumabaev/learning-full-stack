@@ -82,6 +82,7 @@ console.log(youName);                       // Turdıbek
 // Teacher: Samar Badriddinov
 // Code:
 
+/*
 // for loop
 for (let i = 1; i <= 5; i++){
     console.log(i);
@@ -113,3 +114,30 @@ for (let k = 0; k < questions.length; k++){
 }
 
 console.log(answers);                       // [ "Turdıbek", "93 949 59 69", "17" ]
+        */
+
+// Lesson: 4
+// Date: 1.11.2022
+// Teacher: Samar Badriddinov
+// Code:
+
+let age = +prompt("How old are you?");
+
+if (age < 18){
+    alert("You are young");
+} else if (age > 80){
+    alert("you are late");
+} else {
+    alert("Welcome to my site...");
+}
+
+switch (age){
+    case 18:
+        alert("you are 18 years old");
+        break;
+    case 50:
+        alert("you are 50 years old");
+        break;
+    default:
+        alert("Your age is unknown");
+}
