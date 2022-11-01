@@ -121,6 +121,7 @@ console.log(answers);                       // [ "Turdıbek", "93 949 59 69", "1
 // Teacher: Samar Badriddinov
 // Code:
 
+/*
 let age = +prompt("How old are you?");
 
 if (age < 18){
@@ -141,3 +142,49 @@ switch (age){
     default:
         alert("Your age is unknown");
 }
+        */
+
+// Lesson: 5
+// Date: 1.11.2022
+// Teacher: Samar Badriddinov
+// Code:
+
+function functionHello(){
+    console.log("Hi there, i am programmer.");
+}                                                   // function decloration
+
+functionHello();                                    // Hi there, i am programmer.
+
+
+helloFunc("Turdıbek");                              // Hi, my name is Turdıbek
+function helloFunc(firstName){
+    console.log(`Hi, my name is ${firstName}`);
+}                                                   // function decloration
+
+helloFunc("Muwsa");                                 // Hi, my name is Muwsa
+helloFunc("Abiw");                                  // Hi, my name is Abiw
+
+
+let printConsole = function (){
+    console.log("Of course I will be a programmer.");
+}                                                   // function expression
+
+printConsole();                                     // Of course I will be a programmer.
+
+
+let num = 5;
+
+function foo() {
+    let num = 10;
+    console.log(num);
+}                                                   // function decloration
+
+foo();                                              // 10
+console.log(num);                                   // 5
+
+
+function myName() {
+    return "Turdıbek";
+}
+
+console.log(`My name is ${myName()}`);              // My name is Turdıbek
