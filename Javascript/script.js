@@ -75,3 +75,41 @@ prompt("say something");
 let youName = prompt("What is your name?");
 console.log(youName);                       // Turdıbek
         */
+
+
+// Lesson: 3
+// Date: 1.11.2022
+// Teacher: Samar Badriddinov
+// Code:
+
+// for loop
+for (let i = 1; i <= 5; i++){
+    console.log(i);
+}
+
+// do-while loop
+let i = 1
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+// while loop
+let j = 1;
+while (j <= 5){
+    console.log(j);
+    j++;
+}
+
+let answers = [];
+let questions = [
+    'What is your name?',
+    'What is your phone?',
+    'How old are you?',
+]
+
+for (let k = 0; k < questions.length; k++){
+    answers[k] = prompt(questions[k]);
+}
+
+console.log(answers);                       // [ "Turdıbek", "93 949 59 69", "17" ]
