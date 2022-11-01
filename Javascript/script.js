@@ -149,6 +149,7 @@ switch (age){
 // Teacher: Samar Badriddinov
 // Code:
 
+/*
 function functionHello(){
     console.log("Hi there, i am programmer.");
 }                                                   // function decloration
@@ -188,3 +189,25 @@ function myName() {
 }
 
 console.log(`My name is ${myName()}`);              // My name is Turdıbek
+        */
+
+// Lesson: 6
+// Date: 1.11.2022
+// Teacher: Samar Badriddinov
+// Code:
+
+let userName = document.getElementById("username"),
+    userAge = document.getElementsByClassName("user age"),
+    tagText = document.getElementsByTagName("h1")[0];
+
+console.log(userName);
+console.log(userAge);
+console.log(tagText);
+
+function hover(){
+    tagText.textContent = "almost done...";
+}
+
+function byDefault(){
+    tagText.textContent = "I will never stop";
+}
