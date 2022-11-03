@@ -196,18 +196,34 @@ console.log(`My name is ${myName()}`);              // My name is Turdıbek
 // Teacher: Samar Badriddinov
 // Code:
 
-let userName = document.getElementById("username"),
-    userAge = document.getElementsByClassName("user age"),
-    tagText = document.getElementsByTagName("h1")[0];
+// let headingOne = document.getElementById('goal');
+// headingOne.textContent = "hello";
+// headingOne.className = "my-goal";
+// console.log(headingOne);
 
-console.log(userName);
-console.log(userAge);
-console.log(tagText);
+// let submitBtn = document.querySelector("#click")
+// console.log(submitBtn);
 
-function hover(){
-    tagText.textContent = "almost done...";
-}
+// let input = document.querySelector(".myInput");
+// console.log(input.value)
 
-function byDefault(){
-    tagText.textContent = "I will never stop";
+// Lesson: 7
+// Date: 3.11.2022
+// Teacher: Saidbek Arslonov
+// Code:
+
+function calculateBMI(){
+    let nameVal = document.querySelector("#name")
+    let weightVal = document.querySelector("#weight");
+    let heightVal = document.querySelector("#height");
+    let result = document.querySelector("#result");
+
+    const name = nameVal.value;
+    const weight = parseFloat(weightVal.value);
+    const heigth = parseFloat(heightVal.value);
+
+    let bmi = weight / (heigth * heigth);
+    // console.log(bmi);
+
+    result.innerHTML = `${name}'s BMI is ${bmi.toFixed(2)}`;
 }
